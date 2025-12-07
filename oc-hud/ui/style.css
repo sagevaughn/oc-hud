@@ -1,0 +1,38 @@
+:root {
+  --health:#ff4d4d;
+  --armor:#4da6ff;
+  --hunger:#f1c40f;
+  --thirst:#1abc9c;
+  --voice:#b26bff;
+}
+
+body { margin:0; background:transparent; font-family:sans-serif; color:white; }
+
+#hud {
+  position:absolute;
+  bottom:30px;
+  left:30px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+.circle { width:60px; height:60px; }
+svg { width:60px; height:60px; transform:rotate(-90deg); }
+
+.bg { fill:none; stroke:rgba(255,255,255,0.08); stroke-width:8; }
+.bar { fill:none; stroke-width:8; stroke-linecap:round; transition:0.2s; }
+
+.healthC .bar { stroke:var(--health); }
+.armorC .bar { stroke:var(--armor); }
+.hungerC .bar { stroke:var(--hunger); }
+.thirstC .bar{ stroke:var(--thirst); }
+.voiceC .bar { stroke:var(--voice); }
+
+#vehiclehud { display:none; background:rgba(0,0,0,.6); padding:10px 14px; border-radius:14px; text-align:center;}
+#speed { font-size:22px; font-weight:bold; }
+
+#compass { position:absolute; top:-40px; font-weight:bold; }
+#street { position:absolute; top:-22px; font-size:12px; opacity:0.8; }
+
+#controls { position:absolute; top:-70px; background:rgba(0,0,0,.7); padding:10px; border-radius:10px; }

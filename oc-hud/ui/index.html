@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="hud">
+
+    <div id="compass">N</div>
+    <div id="street">Loading...</div>
+
+    <div class="circle healthC"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle id="health" class="bar" cx="50" cy="50" r="45"/></svg></div>
+    <div class="circle armorC"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle id="armor" class="bar" cx="50" cy="50" r="45"/></svg></div>
+    <div class="circle hungerC"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle id="hunger" class="bar" cx="50" cy="50" r="45"/></svg></div>
+    <div class="circle thirstC"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle id="thirst" class="bar" cx="50" cy="50" r="45"/></svg></div>
+    <div class="circle voiceC"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="45"/><circle id="voice" class="bar" cx="50" cy="50" r="45"/></svg></div>
+
+    <div id="vehiclehud">
+      <div id="speed">0</div>
+      <div>Fuel: <span id="fuel">0</span>%</div>
+    </div>
+
+    <div id="controls" hidden>
+      <select id="theme">
+        <option value="default">Default</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="purple">Purple</option>
+      </select>
+      <button id="closeBtn">Close</button>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
